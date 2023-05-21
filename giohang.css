@@ -1,0 +1,529 @@
+.check-shop{
+    margin-top: 100px;
+    text-align: center;
+    color:#777;
+    font-size:17px;
+    width: 100%;
+    height: 50vh;
+}
+.shop-main{
+    max-width:1200px;
+    margin:auto;
+    width:100%;
+    margin-top:60px;
+    display: none;
+}
+.shop-main form{
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+    padding:0 16px;
+}
+.shopping-cart{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width:70%;
+}
+.cart-table{
+    width:100%;
+    padding: 16px 16px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 1px 20px -15px rgb(225, 222, 222), 0px 2px 20px -5px rgba(225, 222, 222, 0.808);
+}
+.table-wrapper{
+    padding:0;
+    overflow-x: auto;
+}
+.cart{
+    width:100%;
+}
+.cart th{
+    border-style: none;
+    font-weight: 600;
+    font-size:16px;
+    color:#1D1D1F;
+    min-height: 0;
+    vertical-align: top;
+    padding:16px 16px;
+    text-align: left;
+}
+.cart td{
+    border-style: none;
+    font-weight: 600;
+    font-size:16px;
+    color:#1D1D1F;
+    min-height: 0;
+    vertical-align: top;
+    padding:20px 16px;
+    text-align: left;
+    border-top:1px solid darkgray;
+}
+.cart .shop-picture img{
+    width:80px;
+    height: 80px;
+}
+.cart .shop-product a{
+    font-weight: 600;
+    color:#1D1D1F;
+}
+.cart .shop-product a:hover{
+    color:#0066cc;
+}
+.cart .shop-product .attributes{
+    margin:3px 0;
+    font-size: 15px;
+    color:#86868B;
+    font-weight: 400;
+    line-height: 24px;
+    white-space: nowrap;
+}
+.cart .product-item{
+    margin:10px 0;
+}
+.cart .product-item a{
+    color: #0066cc;
+}
+.cart .product-item a:hover{
+    border-bottom:1px solid #0066cc;
+}
+.cart .shop-price{
+    white-space: nowrap;
+}
+.cart .shop-count input{
+    width:50px;
+    text-align: center;
+    background-color: #f5f5f7;
+    border-radius: 8px;
+    border: 0;
+    padding: 6px 10px;
+    height:36px;
+    vertical-align: middle;
+    font-size:15px;
+    outline:none;
+}
+.cart .shop-remove button{
+    width:14px;
+    height:18px;
+    border:0;
+    background: url(img/remove-cart.png) center no-repeat;
+    position: relative;
+    top:8px;
+}
+.cart-options{
+    position:absolute;
+    right:18px;
+    bottom:16px;
+}
+.cart-options button{
+    margin:0 0 0 20px;
+    font-size:14px;
+    display: inline-block;
+    min-width: 180px;
+    padding:10px 20px;
+    background:#fff;
+    border:1px solid #0066cc;
+    border-radius: 8px;
+    color:#0066cc;
+}
+.cart-information{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1D1D1F;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.check-billing{
+    border-radius: 8px;
+    box-shadow: 0px 1px 20px -15px rgb(225, 222, 222), 0px 2px 20px -5px rgba(225, 222, 222, 0.808);
+    padding:16px 20px;
+}
+.check-data{
+    width:100%;
+    padding:8px 0 0;
+    margin:0;
+}
+.inputs{
+    text-align: left;
+    margin:0 0 15px;
+    white-space: normal;
+    color:black;
+}
+.data-input{
+    width:100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap:16px;
+}
+.district{
+    width:50%;
+}
+select{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #86868B;
+    text-transform: capitalize;
+    -webkit-appearance: none;
+    background-image: url(img/down.png);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 20px;
+    padding-left: 15px;
+    width: 100%;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    height: 48px;
+    outline: none;
+    margin-bottom:15px;
+    margin-right:3px;
+    display:block;
+}
+.check-inputs{
+    font-size:16px;
+    font-weight: 700;
+    color:#1D1D1F;
+}
+.cart label{
+    display:none;
+}
+
+.inputs input[type="text"], .inputs input[type="tel"], .inputs input[type="email"] {
+    width:100%;
+    border:1px solid #EBEBEB;
+    border-radius: 8px;
+    height:48px;
+    min-height:40px;
+    max-width:100%;
+    background-color: #fff;
+    font-size: 15px;
+    padding:8px;
+    vertical-align:middle;
+    padding-left:16px;
+    outline:none;
+}
+.inputs label{
+    width: 100px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1D1D1F;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+.inputs input[type="radio"]{
+    margin:0;
+    margin-right:5px;
+    cursor:pointer;
+    padding:0;
+    vertical-align: middle;
+}
+.inputs input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    color: #1D1D1F;
+    vertical-align: middle;
+    padding:0;
+}
+.inputs input:active,.inputs input:focus{
+    border:1px solid #0066cc;
+}
+input[type="tel"].check-input,input[type="email"].check-input {
+    width:50%;
+}
+.check-payment{
+    border-radius: 8px;
+    box-shadow: 0px 1px 20px -15px rgb(225, 222, 222), 0px 2px 20px -5px rgba(225, 222, 222, 0.808);
+    padding:16px 20px;
+    margin-top:16px;
+}
+.check-payment img{
+    height: 36px;
+    width:36px;
+    margin:0 12px;
+    vertical-align: middle;
+}
+.data-payment{
+    color:#1D1D1F;
+}
+.inputs-payment{
+    padding:8px 0 0;
+    text-align: left;
+    font-size:14px;
+    color:#86868B;
+}
+.payment-method{
+    margin-top: 16px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:1rem;
+    grid-gap:1rem;
+    margin-bottom:16px;
+}
+label.bank{
+    margin:0;
+    text-align: left;
+    padding:23px 0;
+    font-size:14px;
+    font-weight: 600;
+    color:#1D1D1F;
+    vertical-align: middle;
+}
+.payment-bank input[type="radio"]{
+    vertical-align: middle;
+}
+.payment-bank{
+    border:1px solid #EBEBEB;
+    height:62.8px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border-radius:8px;
+    padding-left:8px;
+    outline: none;
+}
+.payment-bank input[type="radio"].toggle:checked{
+    border: 1px solid #0066cc;
+  }
+.sidebar-cart{
+    border-radius: 8px;
+    box-shadow: 0px 1px 20px -15px rgb(225, 222, 222), 0px 2px 20px -5px rgba(225, 222, 222, 0.808);
+    width:100%;
+    position:sticky;
+    top:80px;
+}
+.total{
+    padding: 40px 16px 16px 16px;
+}
+.total-cart{
+    padding:5px 0 15px;
+    margin: 0 0 20px;
+    border-bottom:1px solid darkgray;
+}
+.check-total{
+    margin: 0 0 22px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+}
+.check-total label{
+    width:90%;
+}
+.check-total a{
+    color:#0066cc;
+    font-size:15px;
+}
+.total-note{
+    text-align: left;
+    color: #e4434b;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+.total-btn button{
+    background:#0066cc;
+    width:100%;
+    border-radius:8px;
+    height:48px;
+    font-size:14px;
+    color:white;
+    outline: none;
+    border: none;
+}
+.total-order{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom:5px;
+}
+.extra label{
+    color:#6b6b6c;
+}
+.extra span{
+    color:#1D1D1F;
+    font-size:16px;
+    font-weight:500;
+}
+.total-order.main label{
+    font-size:17px;
+    color:#1D1D1F;
+    font-weight: 600;
+}
+.total-order.main span{
+    font-size:17px;
+    color:#0066cc;
+    font-weight: 600;
+}
+.row{
+    width:30%;
+}
+sup{
+    vertical-align: top;
+}
+.cart-company{
+    display:none;
+}
+.modal-content h3{
+    font-size:18px;
+}
+@media(max-width:1000px){
+    .shop-main form{
+        flex-direction: column;
+    }
+    .shopping-cart{
+        width:100%;
+        margin:0;
+    }
+    .row{
+        width: 100%;
+        margin:0;
+    }
+    .cart td {
+        display: block;
+        border: none;
+    } 
+    .cart td.shop-product {
+        padding: 5px 10px 12px;
+        width: 75%;
+        text-align: left ;
+        border-bottom: 1px solid #ddd;
+    } 
+    .cart td.shop-product a{
+        font-size:17px;
+    }
+    .cart td.shop-price{
+        width: 75%;
+        text-align: left;
+        padding: 0 0 12px 10px;
+        display: inline-block;
+        color: #0066cc;
+    }
+    .cart td.shop-count{
+        width:60%;
+        text-align: left;
+        padding:0 12px;
+        display: inline-block;
+    }
+    .cart td.shop-remove{
+        width:15%;
+        background-color:#fff;
+        margin: 0;
+        padding: 8px 10px;
+    }
+    .cart thead{
+        display: none;
+    }
+    .cart tbody{
+        display:block;
+        overflow: hidden;
+    }
+    .cart tbody tr{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        background-color: #fff;
+        border-radius: 8px;
+        border: 0;
+        padding: 12px 16px;
+        margin: 10px 0 0;
+        width:100%;
+    }
+    td.shop-picture {
+        width: 25%;
+        padding: 10px 0 0 0;
+        height: 100%;
+    }
+    .cart label{
+        display: inline;
+        text-align: left;
+    }
+    .cart-options{
+        position: relative;
+        margin-top:30px;
+        width:100%;
+    }
+    .cart-btn{
+        display:flex;
+        justify-content: space-between;
+        padding:0 20px 0 0;
+        width:100%;
+    }
+    .cart-btn button{
+        min-width: 50%;
+        font-size:14px;
+    }
+}
+@media(max-width:700px){
+    .payment-method{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/*
+<tr>
+                                    <td class="shop-picture">
+                                        <a href="#"><img src="img/iphone-6.png"></a>
+                                    </td>
+                                    <td class="shop-product">
+                                        <a href="#">iPhone 14 Pro 128GB</a>
+                                        <div class="attributes">
+                                            Hình thức: Mua thẳng
+                                            <br>
+                                            Khu vực: Khu vực miền Bắc
+                                            <br>
+                                            Màu sắc: Space Black
+                                        </div>
+                                        <div class="product-item">
+                                            <a href="#">Sửa</a>
+                                        </div>
+                                    </td>
+                                    <td class="shop-price">
+                                        <label>Giá bán:</label>
+                                        <span>24.990.000đ</span>
+                                    </td>
+                                    <td class="shop-count">
+                                        <label>Số lượng:</label>
+                                        <input type="text" value="1">
+                                    </td>
+                                    <td class="shop-remove">
+                                        <button type="button" class="remove-btn"></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="shop-picture">
+                                        <a href="#"><img src="img/mac-6.jpeg"></a>
+                                    </td>
+                                    <td class="shop-product">
+                                        <a href="#">iPhone 14 Pro 128GB</a>
+                                        <div class="attributes">
+                                            Hình thức: Mua thẳng
+                                            <br>
+                                            Khu vực: Khu vực miền Bắc
+                                            <br>
+                                            Màu sắc: Space Black
+                                        </div>
+                                        <div class="product-item">
+                                            <a href="#">Sửa</a>
+                                        </div>
+                                    </td>
+                                    <td class="shop-price">
+                                        <label>Giá bán:</label>
+                                        <span>24.990.000đ</span>
+                                    </td>
+                                    <td class="shop-count">
+                                        <label>Số lượng:</label>
+                                        <input type="text" value="1">
+                                    </td>
+                                    <td class="shop-remove">
+                                        <button type="button" class="remove-btn"></button>
+                                    </td>
+                                </tr>
+*/                                

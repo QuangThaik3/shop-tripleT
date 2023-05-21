@@ -1,0 +1,176 @@
+.tintuc img{
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    }
+    #Tintuc{
+    top: 365px;
+    text-align: center;
+    color: #211d2c;
+    position: relative;
+    font-size: 100px;
+    }
+    
+    .list{
+        display: block;
+        font-size: 20px;
+        width: 204px;
+        margin-left: 50px;
+    }
+    
+    .content-km{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+      text-align: center;
+    }
+    
+    
+    
+    .congcu{
+        padding: 10px;
+        color: black;
+    }
+    .congcu a{
+        color: black;
+        margin-left: 5px;
+        text-decoration: none;
+    }
+    
+    
+    
+    .news-items {
+        display: grid;
+        grid-auto-rows: minmax(min-content,max-content);
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    
+    }
+    
+    .content-news {
+       display: grid ;
+        
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        width:100%;
+       
+    }
+    
+    .news-content {
+        background-color: #fff;
+        box-shadow: 0px 1px 20px -15px rgb(225, 222, 222), 0px 2px 20px -5px rgba(225, 222, 222, 0.808);
+        width: 306px;
+        height: 300px;
+    }
+    .news-content img{
+        width: 306px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 172px;
+    }
+    
+    .content-all{
+        display:flex;
+        max-width:1200px;
+        margin:auto;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+    }
+    .content{
+        width:20%;
+        position: relative;
+        top:0;
+        height:100%;
+    }
+    .content-tcc{
+        width:100%;
+        height: 100%;
+    }
+    .thanhcongcu{
+        position: sticky;
+        top:60px;
+    }
+    .thanhcongcu ul{
+        margin:0;
+        padding:0;
+    }
+    .content-tintuc h2{
+      text-align: center;
+    
+    }
+    .content-tintuc{
+        width:80%;
+    }
+    .content-news .news-content{
+      border-radius: 10px ;
+      border: 2px;
+      border-color:  #211d2c;
+    }
+    .content-news .news-content:hover{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    }
+    .news-feed span{
+      padding-left: 130px;
+      color: #86868B;
+    }
+    .news-tittle a{
+      display: inline-block;
+    color: #333;
+      padding-top: 10px;
+      margin-left: 5px;
+    
+    }
+    
+    .congcu.active i,
+    .congcu.active a {
+      color: #0066cc; /* Màu xanh */
+    }
+    
+    @media screen and (max-width: 767px){
+      .thanhcongcu{
+        display: none;
+      }
+      .content-all .content-news{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+        vertical-align: middle;
+      }
+      
+      .content-tintuc h2{
+        text-align: center;
+    
+      
+    }
+      
+    }
+    
+    @media screen and (max-width: 1080px){
+      .content-news{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:1280px){
+      .content-all{
+        display: block;
+        width:90%;
+        margin: auto;
+      }
+      .thanhcongcu{
+        display: block;
+        width: 100%;
+        position: relative;
+        top:0px;
+      }
+      .content-tintuc{
+        width:100%;
+      }
+      .content-news{
+        width: 100%;
+        grid-gap:30px;
+      }
+    }

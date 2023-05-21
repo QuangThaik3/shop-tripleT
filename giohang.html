@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ShopDunk - Giỏ hàng</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A demonstration of what can be accomplished visually through CSS-based design."
+    />
+    <meta name="robots" content="all" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="giohang.css">
+  </head>
+  <body>
+    <div class="container-box">
+      <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+
+      <div class="menu-close">
+        <i class="fas fa-times fa-2x"></i>
+      </div>
+
+      <ul class="menu-main">
+        <li><a href="dangky.html">Tạo tài khoản ngay</a></li>
+        <li><a href="dangnhap.html">Đăng nhập</a></li>
+        <li><a href="dichvu.html">Dịch vụ</a></li>
+        <li><a href="tintuc.html">Khuyến mãi</a></li>
+      </ul>
+      <!--Nav-->
+      <div class="menu-box">
+      <nav class="main-nav">
+        <a href="index.html"><img
+          src="img/main.png"
+          alt="ShopDunk"
+        /></a>
+        <ul class="main-menu">
+          <li><a href="iphone.html">iPhone</a></li>
+          <li><a href="ipad.html">iPad</a></li>
+          <li><a href="mac.html">Mac</a></li>
+          <li><a href="watch.html">Watch</a></li>
+          <li><a href="amthanh.html">Âm thanh</a></li>
+          <li><a href="phukien.html">Phụ kiện</a></li>
+          <li><a href="dichvu.html">Dịch vụ</a></li>
+          <li><a href="tintuc.html">Khuyến mãi</a></li>
+        </ul>
+        <ul class="right-menu">
+          <li>
+            <a href="timkiem.html"><i class="fas fa-search fa-lg"></i></a>
+          </li>
+          <li>
+            <a href="giohang.html"><i class="fas fa-shopping-cart fa-lg"></i></a>
+            <span class="cart-count"></span>
+          </li>
+          <li>
+            <a href="#" id="right-user"><i class="fa-regular fa-user fa-lg"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="bottom-menu">
+      <ul>
+        <li><a href="dangky.html">Tạo tài khoản ngay</a></li>
+        <li><a href="dangnhap.html">Đăng nhập</a></li>
+      </ul>
+      </div>
+      </div>
+     </div>
+    <!--Header-->
+    <div class="check-shop">
+      Giỏ hàng của bạn đang trống!
+    </div>
+    <div class="shop-main">
+        <form>
+            <div class="shopping-cart">
+                <div class="cart-table">
+                    <div class="table-wrapper">
+                        <table class="cart">
+                            <thead>
+                                <tr>
+                                    <th class="shop-picture">Hình Ảnh</th>
+                                    <th class="shop-product">Tên Sản Phẩm</th>
+                                    <th class="shop-price">Giá bán</th>
+                                    <th class="shop-count">Số lượng</th>
+                                    <th class="shop-remove"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cart-options">
+                        <div class="cart-btn">
+                        <button type="submit" class="option-extra">Cập nhập giỏ hàng</button>
+                        <button type="submit" class="option-main">Tiếp tục mua sắm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-information">Thông tin thanh toán</div>
+                <div class="shop-billing">
+                    <div class="check-billing">
+                        <div class="check-data">
+                            <div class="inputs">
+                              <input type="text" placeholder="Tên" id="cart-ten">
+                            </div>
+                            <div class="inputs data-input">
+                              <input type="tel" placeholder="Số điện thoại" class="check-input" id="cart-tel">
+                              <input type="email" placeholder="Email" class="check-input" id="cart-email">
+                            </div>
+                            <div class="check-inputs">
+                              Hình thức nhận hàng
+                            </div>
+                            <div class="data-input">
+                            <div class="inputs district">
+                              <label>Tỉnh, thành phố:</label>
+                              <select class="check-input">
+                                <option>Chọn tỉnh, thành phố</option>
+                                <option>Hà Nội</option>
+                                <option>Thành phố Hồ Chí Minh</option>
+                                <option>Đà Nẵng</option>
+                                <option>Hải Phòng</option>
+                                <option>Cần Thơ</option>
+                                <option>An Giang</option>
+                                <option>Bà Rịa - Vũng Tàu</option>
+                                <option>Bạc Liêu</option>
+                                <option>Bắc Giang</option>
+                                <option>Bắc Kạn</option>
+                                <option>Bắc Ninh</option>
+                                <option>Bến Tre</option>
+                                <option>Bình Dương</option>
+                                <option>Bình Định</option>
+                                <option>Bình Phước</option>
+                                <option>Bình Thuận</option>
+                                <option>Cà Mau</option>
+                                <option>Cao Bằng</option>
+                                <option>Đắk Lắk</option>
+                                <option>Đắk Nông</option>
+                                <option>Điện Biên</option>
+                                <option>Đồng Nai</option>
+                                <option>Đồng Tháp</option>
+                                <option>Gia Lai</option>
+                                <option>Hà Giang</option>
+                                <option>Hà Nam</option>
+                                <option>Hà Tĩnh</option>
+                                <option>Hải Dương</option>
+                                <option>Hậu Giang</option>
+                                <option>Hòa Bình</option>
+                                <option>Hưng Yên</option>
+                                <option>Kiên Giang</option>
+                                <option>Kon Tum</option>
+                                <option>Khánh Hòa</option>
+                                <option>Lai Châu</option>
+                                <option>Lạng Sơn</option>
+                                <option>Lào Cai</option>
+                                <option>Lâm Đồng</option>
+                                <option>Long An</option>
+                                <option>Nam Định</option>
+                                <option>Ninh Bình</option>
+                                <option>Ninh Thuận</option>
+                                <option>Nghệ An</option>
+                                <option>Phú Thọ</option>
+                                <option>Phú Yên</option>
+                                <option>Quảng Bình</option>
+                                <option>Quảng Nam</option>
+                                <option>Quảng Ninh</option>
+                                <option>Quảng Ngãi</option>
+                                <option>Quảng Trị</option>
+                                <option>Sóc Trăng</option>
+                                <option>Sơn La</option>
+                                <option>Tây Ninh</option>
+                                <option>Tiền Giang</option>
+                                <option>Tuyên Quang</option>
+                                <option>Thái Bình</option>
+                                <option>Thái Nguyên</option>
+                                <option>Thanh Hóa</option>
+                                <option>Thừa Thiên Huế</option>
+                                <option>Trà Vinh</option>
+                                <option>Vĩnh Long</option>
+                                <option>Vình Phúc</option>
+                                <option>Yên Bái</option>
+                              </select>
+                            </div>
+                            <div class="inputs district">
+                              <label>Quận, Huyện:</label>
+                              <select class="check-input">
+                              </select>
+                            </div>
+                            </div>
+                            <div class="inputs">
+                              <input type="radio" name="receive" class="receive-radio">
+                              <label>Nhận tại cửa hàng</label>
+                              <input type="radio" name="receive" class="receive-radio">
+                              <label>Giao tận nơi</label>
+                            </div>
+                            <div class="inputs">
+                              <label>Địa chỉ cụ thể:</label>
+                              <input type="text" id="address-input">
+                            </div>
+                            <div class="inputs">
+                              <input type="checkbox" id="inputs-company">
+                              <label>Xuất hóa đơn công ty</label>
+                            </div>
+                            <div class="cart-company">
+                              <div class="inputs">
+                                <input type="text" placeholder="Tên công ty">
+                              </div>
+                              <div class="inputs">
+                                <input type="text" placeholder="Địa chỉ công ty">
+                              </div>
+                              <div class="inputs">
+                                <input type="text" placeholder="Mã số thuế">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-payment">
+                      <div class="check-data">
+                        <div class="data-payment">
+                        <div class="check-inputs">Thông tin thanh toán</div>
+                        <div class="inputs-payment">Quý khách vui lòng lựa chọn các hình thức thanh toán dưới đây:</div>
+                        <div class="payment-method">
+                          <div class="payment-bank">
+                            <input type="radio" name="payment" class="toggle payment-radio">
+                            <label><img src="img/payment-1.jpg"></label>
+                            <label class="bank">Chuyển khoản ngân hàng</label>
+                          </div>
+                          <div class="payment-bank">
+                            <input type="radio" name="payment"  class="toggle payment-radio">
+                            <label><img src="img/payment-2.jpg"></label>
+                            <label class="bank">Thanh toán OnePay</label>
+                          </div>
+                          <div class="payment-bank">
+                            <input type="radio" name="payment"  class="toggle payment-radio">
+                            <label><img src="img/payment-3.jpg"></label>
+                            <label class="bank">Thanh toán Payoo</label>
+                          </div>
+                          <div class="payment-bank">
+                            <input type="radio" name="payment"  class="toggle payment-radio">
+                            <label><img src="img/payment-4.jpg"></label>
+                            <label class="bank">Thanh toán ZaloPay</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="sidebar-cart">
+              <div class="total">
+                <div class="total-cart">
+                  <div class="total-order extra">
+                    <label>Tổng phụ:</label>
+                    <span></span>
+                  </div>
+                  <div class="total-order main">
+                    <label>Tổng cộng:</label>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="inputs check-total">
+                  <input type="checkbox"  id="terms-checkbox">
+                  <label>Tôi đã đọc và đồng ý với <a>điều khoản và điều kiện</a> của website</label>
+                </div>
+                <div class="total-btn">
+                  <button type="submit" id="shop-total">Tiến hành đặt hàng</button>
+                </div>
+                <div class="total-note">
+                  (*) Phí phụ thu sẽ được tính khi bạn tiến hành thanh toán.
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="modal" id="my-modal">
+      <div class="modal-content">
+          <img src="img/main-2.jpg">
+          <h3>Mua hàng thành công</h3>
+          <p>Cảm ơn bạn đã quan tâm và ủng hộ ShopDunk</p>
+      </div>
+    </div>
+    
+    <section class="link">
+      <h3>Đăng ký nhận tin từ ShopDunk</h3>
+      <p>Thông tin sản phẩm mới nhất và chương trình khuyến mãi</p>
+      <div class="link-email">
+      <input type="email" placeholder="Email của bạn">
+      <button>Đăng ký</button>
+      </div>
+    </section>
+    <!--Footer-->
+    <div class="fotter">
+      <div class="fotter-main">
+      <div class="fotter-inner">
+        <div class="fotter-left">
+          <a href="index.html" class="fotter_shop"
+          ><img src="img/main.png" alt="ShopDunk"
+        /></a>
+          <p>
+            Năm 2020, ShopDunk trở thành đại lý ủy quyền của Apple. Chúng tôi phát triển chuỗi cửa hàng tiêu chuẩn và Apple Mono Store nhằm mang đến trải nghiệm tốt nhất về sản phẩm và dịch vụ của Apple cho người dùng Việt Nam.
+          </p>
+          <a href="https://www.facebook.com/shopdunk.store" target="_blank"
+          ><img src="img/Face.png" alt="Facebook"
+        /></a>
+        <a href="https://www.tiktok.com/@shopdunk_apple" target="_blank"
+          ><img src="img/Tiktok.png" alt="Tik Tok"
+        /></a>
+        <a href="https://zalo.me/3937868610324741136" target="_blank"
+          ><img
+            src="img/Zalo.png"
+            alt="Zalo"
+        /></a>
+        <a href="https://www.youtube.com/c/ShopDunkApple" target="_blank"
+          ><img
+            src="img/Youtube.png"
+            alt="YouTube"
+        /></a>
+        </div>
+        <div class="fotter-right">
+          <div class="fotter-thongtin">
+            <div class="fotter-h4" id="h4-thongtin">
+            <h4>Thông tin</h4>
+            </div>
+          <ul class="fotter-ul" id="ul-thongtin">
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Check IMEI</a></li>
+            <li><a href="#">Phương thức thanh toán</a></li>
+            <li><a href="#">Thuê điểm bán lẻ</a></li>
+            <li><a href="#">Bảo hành và sửa chữa</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Đánh giá chất lượng, khiếu nại</a></li>
+          </ul>
+        </div>
+        <div class="fotter-chinhsach">
+          <div class="fotter-h4" id="h4-chinhsach">
+          <h4>Chính sách</h4>
+          </div>
+          <ul class="fotter-ul" id="ul-chinhsach">
+            <li><a href="#">Thu cũ đổi mới</a></li>
+            <li><a href="#">Giao hàng</a></li>
+            <li><a href="#">Giao hàng(ZaloPay)</a></li>
+            <li><a href="#">Hủy giao dịch</a></li>
+            <li><a href="#">Đổi trả</a></li>
+            <li><a href="#">Bảo hành</a></li>
+            <li><a href="#">Giải quyết khiếu nại</a></li>
+            <li><a href="#">Bảo mật thông tin</a></li>
+            <li><a href="#">Trả góp</a></li>
+          </ul>
+          </div>
+          <div class="fotter-diachi">
+            <div class="fotter-h4" id="h4-diachi">
+            <h4>Địa chỉ & Liên hệ</h4>
+            </div>
+          <ul class="fotter-ul" id="ul-diachi">
+            <li><a href="#">Tài khoản của tôi</a></li>
+            <li><a href="#">Đơn đặt hàng</a></li>
+            <li><a href="#">Hệ thống cửa hàng</a></li>
+            <li><a href="#">Tìm Store trên Google Map</a></li>
+            <li><a href="#">Mua hàng:</a><span> 1900.6626</span></li>
+            <li><p>Nhánh 1: khu vực Hà Nội và các tỉnh phía Bắc</p></li>
+            <li><p>Nhánh 2: khu vực Hồ Chí Minh và các tỉnh phía Nam</p></li>
+            <li><p>Nhánh 3: Khiếu nại và góp ý</p></li>
+            <li><a href="#">Doanh nghiệp:</a><span> 0822.688.688</span></li>
+          </ul>
+          </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2016 Công ty Cổ Phần HESMAN Việt Nam GPDKKD: 0107465657 do Sở KH & ĐT TP. Hà Nội cấp ngày 08/06/2016.</p>
+          <p>Địa chỉ: Số 76 Thái Hà, phường Trung Liệt, quận Đống Đa, thành phố Hà Nội, Việt Nam</p>
+          <p>Đại diện pháp luật: PHẠM MẠNH HÒA | ĐT: 0247.305.9999 | Email: lienhe@shopdunk.com</p>
+        </div>
+        </div>
+        <a class="up" href="#"><i class="fas fa-arrow-up "></i></a>
+        <a href="http://online.gov.vn/(X(1)S(jfktnnku5rui3vjf5pnk4sgc))/Home/WebDetails/34144?AspxAutoDetectCookieSupport=1" target="_blank" class="fotter-footer"
+          ><img src="img/Bocongthuong.png" alt="BoCongThuong"
+        /></a>
+    </div>
+
+    <div class="chat-box">
+      <a class = "phone" href="#"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+    </div>
+
+      <div class="box-chat">
+        <a class="times" href="#"><i class="fas fa-times fa-2x"></i></a>
+      </div>  
+
+      <div class="container" id="container">
+        <div class="chat-container chatUser-container">
+          <div class="chat-header">
+            <h3 class="chat-h3">ShopDunk</h3>
+            <button id="chatPrev"><i class="fas fa-chevron-left"></i></button>
+          </div>
+           <div class="chat-body-set">
+            <div class="chat-input">
+              <input id="userTen" type="text" placeholder="* Tên">
+              <input id="userSdt" type="text" placeholder="* Điện thoại">
+            </div> 
+              <button id="chatAlign"><i class="fas fa-align-right"></i>Bắt đầu trò chuyện</button>
+          </div>
+        </div>
+        <div class="chat-container chatShop-container">
+            <div class="chat-header">
+            <h3>ShopDunk xin chào quý khách</h3>
+          </div>
+          <div class="chat-body">
+              <p>Cuộc trò chuyện</p>
+              <div class="chat">
+              <img src="img/main-2.jpg">
+              <div class="chat-set">
+              <p>Nhân viên ShopDunk</p>
+              <p>Xin chào bạn, ...</p>
+              </div>
+              <p class="chat_p">Hoạt động</p>
+            </div>
+               <button id="chatNext"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="chat-fotter">
+             <button id="chatRight"><i class="fas fa-align-right"></i>Bắt đầu trò chuyện</button>
+          </div>
+        </div>
+        <div class="chat-container chatBot-container">
+          <div class="chat-header-set">
+            <button id="chatExit"><i class="fas fa-chevron-left"></i></button>
+            </div>
+            <div class="chat-header-all">
+            <div class="chat-header-get">
+            <img src="img/main-2.jpg">
+            <p>ShopDunk</p>
+            </div>
+            <div class="chat-body-get">
+            <div class="chat-shop">
+              <img src="img/main-2.jpg">
+              <p>Xin chào bạn, bạn đang quan tâm đến các sản phẩm của ShopDunk phải không ạ ?</p>
+            </div>
+            <div class="chat-you">
+              <p><span></span></p>
+              <p><span></span></p>
+            </div>
+            <div class="shop-chat">
+              <div class="chat-shop-you">
+              <img src="img/main-2.jpg">
+              <p id="botStartMessage" class="botText"><span></span></p>
+               </div>
+            </div>
+            <div id="chat-bar">
+              <p></p>
+            </div>
+            </div>
+            </div>
+            <div class="chat-footer">
+            <textarea id="textInput" class="input-box" type="text"
+            placeholder="Gõ chữ và nhấn Enter để "></textarea>
+            <i id="chat-like" class="fas fa-thumbs-up fa-lg" style="color:#706f6f;"  onclick="heartButton()"></i>
+            <i id="chat-plane" class="fas fa-paper-plane fa-lg" onclick="sendButton()"></i>
+            </div>
+        </div>
+      </div>
+      
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="menu.js"></script>
+    <script src="chat.js"></script>
+    <script src="giohang.js"></script>
+  </body>
+</html>

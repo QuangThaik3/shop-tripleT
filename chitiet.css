@@ -1,0 +1,594 @@
+.product_chi_tiet{
+    max-width:1200px;
+    margin:auto;
+    margin-top:50px;
+    margin-bottom:100px;
+}
+.container_chi_tiet{
+    width:100%;
+    padding:16px 16px;
+}
+.product-chi-tiet-content
+{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width:100%;
+        position: relative;
+}
+
+.product_chi_tiet_top
+{
+        margin-bottom: 30px;
+}
+.product_chi_tiet_top p
+{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0 12px;
+        font-size: 15px;
+        display: inline;
+        color: #333;
+}
+.product-content-left
+{
+        width : 50%;
+        display: flex;
+        flex-wrap: wrap;
+        position: sticky;
+        top:80px;
+        padding:16px 16px;
+        box-shadow: 0px 1px 20px -15px rgb(225, 222, 222), 0px 2px 20px -5px rgba(225, 222, 222, 0.808);
+}
+  
+.product-content-left-big-img
+{
+        width: 80%;
+        padding-right: 20px;
+}
+.product-content-left-big-img img
+{
+        width: 90%;
+}
+.product-content-left-small-img
+{
+        width: 20%;
+}
+.product-content-left-small-img img
+{
+        width: 100%;
+}
+
+    /*----right-----*/
+.product-content-right
+{
+        width : 40%;
+        padding-left: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product-content-right-name
+{
+        color: #333;
+}
+.product-content-right-product-name{
+    border-bottom:1px solid darkgray;
+}
+.product-content-right-product-name h2
+{
+          font-size: 29px;
+}
+.content-select{
+        width:50%;
+}
+.product-content-right-product-name select{
+    width:100%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #75757b;
+    text-transform: capitalize;
+    -webkit-appearance: none;
+    background-image: url(img/down.png);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 20px;
+    padding-left: 15px;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    height: 48px;
+    outline: none;
+    margin-bottom:15px;
+    margin-right:3px;
+    box-sizing: border-box; 
+}
+.product-content-right-product-color img
+{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+}
+ul.product-content-right-product-color-img
+{
+      display: flex;
+      flex-wrap:wrap;
+      margin:0;
+      list-style: none;
+      justify-content:flex-start;
+      align-items: center;
+      
+}
+ul.product-content-right-product-color-img li{
+    margin:0 10px 10px 0;
+    display: inline-block;
+    text-align: center;
+}
+ul.product-content-right-product-color-img li label{
+    min-width: 28px;
+    min-height:28px;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+    display: block;
+    margin: 0 ;
+}
+.checked-value .content-title {
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #0066cc;
+    position: relative;
+    padding: 3px 3.2px 3.2px 3.2px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Thêm thuộc tính này */
+}
+
+span.product-title {
+    border-radius: 100%;
+    box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
+    border: unset;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #444;
+    cursor: pointer;
+    vertical-align: middle; /* Thay thế vertical-align: center bằng vertical-align: middle */
+}
+
+ul.product-content-right-product-color-img input[type="radio"]{
+    display:none;
+}
+
+
+   
+.product-content-right-product-name
+{
+        color: #333;
+}
+.product-content-right-product-name h1
+{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px;      
+        color: #333;
+        margin-top: 10px;
+        margin-bottom: 5px;
+}
+.product-content-right-product-name p
+{
+        font-size: 20px;
+        margin-top: 5px; 
+}
+.product-content-right-product-price span
+{
+        margin: 12px 0;
+        font-size: 32px;
+        font-weight: 650;
+        color: #197ec6;
+        margin-top: 15px ;
+        margin-bottom: 15px ;
+}
+.product-content-right-product-price sup{
+        font-size:19px;
+        vertical-align: top;
+        color: #197ec6;
+        font-weight: 600;
+}
+.product-content-right-product-color
+{
+        color: #333;
+}
+.product-content-right-product-color p
+{
+      font-size: 18px;
+}
+.product-content-right-product-size
+{
+        color: #333;
+}
+  
+.product-content-right-product-icon
+{
+        color: #333;
+}
+.product-content-right-product-data 
+{
+      color: #333;
+}
+.product-content-right-product-data p
+{
+      font-size: 18px;
+      margin-top: 12px ;
+      margin-bottom: 10px;
+}
+.Dung-luong span
+{
+        display: inline-block;
+        padding: 10px 10px;
+        border: 1px solid #EBEBEB;
+        margin: 12px 10px 12px 0;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 3px;
+        outline: none;
+       
+}
+
+.quantity
+{
+        display: flex;
+        margin-bottom: 10px;
+}
+.quantity p
+{
+      margin-top: 5px;
+}
+
+.cheater p{
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:#444;
+}
+.cheater input[type="radio"]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.cheater li{
+    margin-bottom:10px;
+}
+.cheater label{
+    vertical-align: middle;
+    color:#444;
+}
+.product-content-right-product-button
+{
+       margin:30px 0;
+}
+.product-content-right-product-button button{
+    background: #0066CC;
+    border-radius: 8px;
+    width: 100%;
+    height: 56px;
+    font-weight: bold;
+    font-size:17px;
+    line-height: 25px;
+    border:none;
+    text-transform: uppercase;
+    color: white;
+}
+.tang-kem .thong-tin-kem
+{
+  display: inline-block;
+  padding: 3px 6px;
+  border: 2px solid #EBEBEB;
+  margin: 12px 10px 12px 0;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 100%;
+}
+.tang-kem p
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+.tang-kem .bo-san-pham
+{
+  display: flex;
+}
+.tang-kem .bo-san-pham i
+{
+  margin-top: 18.5px;
+  margin-right: 5px;
+  color:#3676e4;
+}
+
+.tang-kem .bo-san-pham p
+{
+  margin-top: 14px;
+}
+.tang-kem .bao-hanh
+{
+  display: flex;
+}
+.tang-kem .bao-hanh i
+{
+  margin-top: 18.5px;
+  margin-right: 5px;
+  color:#3676e4;
+}
+.tang-kem .bao-hanh p
+{
+  margin-top: 14px;
+}
+.tang-kem .giao-hang
+{
+  display: flex;
+}
+.tang-kem .giao-hang i
+{
+  margin-top: 18.5px;
+  margin-right: 5px;
+  color:#3676e4;
+}
+.tang-kem .giao-hang p
+{
+  margin-top: 14px;
+}
+.tang-kem .goi-mua
+{
+  display: flex;
+}
+.tang-kem .goi-mua i
+{
+  margin-top: 18.5px;
+  margin-right: 5px;
+  color:#3676e4;
+}
+.tang-kem .goi-mua p
+{
+  margin-top: 14px;
+}
+@media(max-width:1175px){
+        .product-chi-tiet-content
+        {
+                justify-content: center;
+                gap:16px;
+        }
+}
+@media(max-width:1000px){
+        .product-chi-tiet-content{
+                display: block;
+        }
+        .product-content-left{
+                width: 100%;
+                position: relative;
+        }
+        .product-content-right{
+                display:block;
+                width:100%;
+                top:90px;
+                position: relative;
+                margin-bottom:50px;
+        }
+}
+
+.star-reviews{
+        background: #fff;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 35px;
+        width:1200px;
+        margin: auto;    
+        box-shadow: 0px 1px 20px -15px rgb(225, 222, 222), 0px 2px 20px -5px rgba(225, 222, 222, 0.808);      
+}
+
+.star-reviews p {
+        border-bottom: 1px solid #EBEBEB;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 45px;
+        color: #1D1D1F;
+        text-align: left;
+        margin-bottom: 0;
+        padding-bottom:5px;
+        
+}
+.product-star{
+        display:flex;
+        width:100%;
+}
+.product-reviews{
+        border-right: 1px solid #EBEBEB;
+        margin-top: 0;
+        background: #FFFFFF;
+        padding: 0 16px 0 0;
+        width: 35%;
+}
+.reviews-content{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width:100%;
+        padding:16px 0 0;
+        text-align: left;
+}
+.reviews-content p{
+        color:#1D1D1F;
+        font-size:17px;
+        width:100%;
+        padding-bottom:20px;
+        margin-top:0;
+}
+
+.reviews-content input{    
+        max-width:100%;    
+        display: block;
+        padding:10px 10px;
+        width:100%;
+        border-radius: 8px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        height:48px;
+        border: 1px solid #EBEBEB;
+        outline: none;
+}
+.reviews-content input:focus, .reviews-content input:active{
+        border:1px solid #244fcf;
+}
+.reviews-content textarea{
+        min-height: 48px;
+        width: 100% !important;
+        border: 1px solid #EBEBEB;
+        border-radius: 8px;
+        font-size:15px;
+        padding:10px 10px;
+        line-height: 24px;
+        max-width: 100%;
+        display: block;
+        width:100%;
+        text-align: left;
+        outline: none;
+}
+.reviews-content textarea:focus, .reviews-content textarea:active{
+        border: 1px solid #244fcf;
+}
+.reviews-content label{
+        font-size:14px;
+        font-weight: 600;
+        text-align: left;
+        line-height: 18px;
+        color:#1D1D1F;
+        margin-bottom: 10px;
+}
+.reviews-content button{
+        background: #0066CC;
+        color: #fff;
+        min-height: 40px;
+        min-width: 160px;
+        padding: 8px 27px;
+        border-radius: 8px;
+        border:1px solid #0066CC;
+        font-weight: 400;
+        font-size:15px;
+}
+.form-group{
+        width:100%;
+        margin:15px 0;
+}
+.form-user{
+        width:100%;
+        margin:15px 0;
+}
+.form-reviews{
+        width:100%;
+        margin:15px 0;
+}
+.user-reviews{
+        width:65%;
+        padding:16px 24px;
+}
+.user-star{
+        width:100%;
+        margin-bottom:20px;
+}
+.user-date strong{
+        font-size:16px;
+        color:#676262;
+        font-weight:600;
+}
+.user-date img{
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        vertical-align: middle;
+}
+.user-date{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap:5px;
+        margin-bottom: 5px;
+}
+.user-date .date{
+        font-size:13.5px;
+        vertical-align: bottom;
+        padding-top:3px;
+        color:#444;
+}
+.user-share{
+        color:#444;
+        font-size: 15px;
+
+}
+.stars-outer {
+        position: relative;
+        display: inline-block;
+}
+      
+.stars-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+}
+      
+.stars-outer::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #ccc;
+ }
+      
+.stars-inner::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #f8ce0b;
+}
+@media(max-width:1290px){
+        .star-reviews{
+                width:1100px;
+                margin:auto;
+        }
+}
+@media(max-width:1121px){
+        .star-reviews{
+                width:1000px;
+        }
+}
+@media(max-width:1050px){
+        .star-reviews{
+                width:950px;
+        }
+}
+@media(max-width:1000px){
+        .star-reviews{
+                width:95%;
+        }
+        .product-star{
+                display:block;
+        }
+        .product-reviews{
+                display:block;
+                width:100%;
+                border-bottom: 1px solid #EBEBEB;
+                border-right: none;
+                padding-bottom:20px;
+        }
+        .user-reviews{
+                display: block;
+                width:100%;
+                padding: 16px 0;
+                margin-top:15px;
+        }
+}
