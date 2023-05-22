@@ -13,7 +13,7 @@ const checkTen = document.querySelector('#check-ten');
 const checkUser = document.querySelector('#check-user');
 const Btn = document.querySelector('#login-btn');
 const modal = document.querySelector('#my-modal')
-let count = 0
+
 
 function index() {
     window.location.href = "index.html";
@@ -28,9 +28,7 @@ Email.addEventListener('blur',() => {
     }else{
         Email.style.marginBottom = "15px";
         checkEmail.style.display = 'none';
-        count++;
     }
-    console.log(count);
 })
 
 Tel.addEventListener('blur',() => {
@@ -41,10 +39,8 @@ Tel.addEventListener('blur',() => {
         checkTel.style.display = 'block';
     }else{
         Tel.style.marginBottom = "15px";
-        checkTel.style.display = 'none';
-        count++;
+        checkTel.style.display = 'none'; 
     }
-    console.log(count);
 })
 
 Pass.addEventListener('blur', () => {
@@ -57,26 +53,19 @@ Pass.addEventListener('blur', () => {
     } else {
         Pass.style.marginBottom = "15px";
         checkPass.style.display = 'none';
-        checkPass_s.style.display = 'none';
-        count++;
+        checkPass_s.style.display = 'none';    
     }
-    console.log(count);
 });
 
 Password.addEventListener('blur', () => {
     const regex = Pass.value;
-    if(Password.value.length == 0){
-        count--;
-    }
     if(regex != Password.value){
         Password.style.marginBottom = "0px";
         checkPassword.style.display = 'block';
     }else{
         Password.style.marginBottom = "15px";
-        checkPassword.style.display = 'none';
-        count++;
+        checkPassword.style.display = 'none';       
     }
-    console.log(count);
 })
 
 Ten.addEventListener('blur',() => {
@@ -85,34 +74,50 @@ Ten.addEventListener('blur',() => {
         checkTen.style.display = 'block';
     }else{
         Ten.style.marginBottom = "15px";
-        checkTen.style.display = 'none';
-        count++;
+        checkTen.style.display = 'none';       
     }
-    console.log(count);
 })
 
 User.addEventListener('blur',() => {
-    if(User.value.length == 0){
+    if(User.value.length < 5){
         User.style.marginBottom = "0px";
         checkUser.style.display = 'block';
     }else{
         User.style.marginBottom = "15px";
         checkUser.style.display = 'none';
-        count++;
     }
-    console.log(count);
 })
-
-
+function checkvalidUser(username){
+    return username.length >= 5;
+}
+function checkvalidTen(ten){
+    return ten.length > 0;
+}
+function checkvalidEmail(email){
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+function checkvalidPass(password){
+    const regex = /^(?=.*[#?!@$%^&*-]).{8,}$/;
+    return regex.test(password);
+}
+function checkvalidTel(sdt){
+    const regex = /^0\d{9}$/;
+    return regex.test(sdt);
+}
+function checkvalidPassword(pass){
+    return pass === Pass.value;
+}
 Btn.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log(count);
+    
     var username = User.value;
     var password = Pass.value;
+    var pass = Password.value;
     var ten = Ten.value;
     var sdt = Tel.value;
     var email = Email.value;
-    if(count >= 6){
+    if(checkvalidEmail(email) && checkvalidPass(password) && checkvalidTel(sdt) && checkvalidUser(username) && checkvalidTen(ten) && checkvalidPassword(pass)){
         modal.style.display = 'block';
         localStorage.setItem("username",username);
         localStorage.setItem("password",password);
